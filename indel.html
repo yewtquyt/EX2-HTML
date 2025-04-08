@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=4.0">
+    <title>Shinchan: Shiro and the Coal Town Game</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans text-gray-700">
+
+<header class="text-white p-8 text-center">
+    <div class="flex justify-center items-center">
+        <img src="assets/shin-chan-banner.jpg" alt="Shinchan Banner" class="h-48 mr-4">
+        <img src="assets/naughtiest-son.jpg" alt="Naughtiest Son" class="h-48">
+    </div>
+    <h1 class="text-4xl font-bold mb-2 text-gray-700">Shinchan: Shiro and the Coal Town Game</h1>
+    <p class="text-lg text-gray-700">Available on: Nintendo Switch and Windows PC</p>
+</header>
+
+
+<section class="p-8">
+    <h2 class="text-2xl font-bold mb-4">Game Trailer</h2>
+    <div class="flex justify-center">
+        <video controls width="600" class="shadow-md rounded-md">
+            <source src="assets/shinchan-and-the-coal-town.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+
+<section class="p-8">
+    <h2 class="text-2xl font-bold mb-4">Characters | Who's your favorite?</h2>
+    <div class="characters grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-md shadow-md">
+            <img src="assets/character-shinchan.png" alt="Shinchan" width="200" class="mx-auto mb-4 rounded-md">
+            <h3 class="text-xl font-bold mb-2">Shinnosuke Nohara (Shinchan)</h3>
+            <p>The mischievous 5-year-old protagonist known for his hilarious antics and love of choco chips.</p>
+        </div>
+        <div class="bg-white p-6 rounded-md shadow-md">
+            <img src="assets/character-shiro.png" alt="Shiro" width="200" class="mx-auto mb-4 rounded-md">
+            <h3 class="text-xl font-bold mb-2">Shiro (Family Dog)</h3>
+            <p>Small, fluffy, and sometimes the most sensible member of the household.</p>
+        </div>
+        <div class="bg-white p-6 rounded-md shadow-md">
+            <img src="assets/character-misae.webp" alt="Misae" width="200" class="mx-auto mb-4 rounded-md">
+            <h3 class="text-xl font-bold mb-2">Misae Nohara (Mom)</h3>
+            <p>Shinchan’s short-tempered but loving mother, always trying to keep him in line.</p>
+        </div>
+        <div class="bg-white p-6 rounded-md shadow-md">
+            <img src="assets/character-hiroshi.webp" alt="Hiroshi" width="200" class="mx-auto mb-4 rounded-md">
+            <h3 class="text-xl font-bold mb-2">Hiroshi Nohara (Dad)</h3>
+            <p>The laid-back father who works at a company and enjoys his evening beer.</p>
+        </div>
+        <div class="bg-white p-6 rounded-md shadow-md">
+            <img src="assets/character-himawari.png" alt="Himawari" width="200" class="mx-auto mb-4 rounded-md">
+            <h3 class="text-xl font-bold mb-2">Himawari (Sister)</h3>
+            <p>The youngest of the Noharas. Loves shiny objects and brandname goods. Smiles sideways, like Shinchan.</p>
+        </div>
+        <div class="bg-white p-6 rounded-md shadow-md">
+            <img src="assets/character-toru-kazama.webp" alt="Toru Kazama" width="200" class="mx-auto mb-4 rounded-md">
+            <h3 class="text-xl font-bold mb-2">Toru Kazama</h3>
+            <p>The smart and responsible friend of Shinchan, often the voice of reason in the group.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="p-8">
+    <h2 class="text-2xl font-bold mb-4">Tell Us Your Favorite!</h2>
+    <form class="bg-white p-8 rounded-md shadow-md">
+        <div class="mb-4">
+            <label class="block text-sm font-medium mb-1">Who's your favorite character?</label>
+            <select name="favorite" class="w-full border border-gray-300 rounded-md p-2">
+                <option value="Shinchan">Shinchan</option>
+                <option value="Shiro">Shiro</option>
+                <option value="Misae">Misae</option>
+                <option value="Hiroshi">Hiroshi</option>
+                <option value="Himawari">Himawari</option>
+                <option value="Toru Kazama">Toru Kazama</option>
+            </select>
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium mb-1">Character not in the list? Write their name below:</label>
+            <input type="text" name="other_character" class="w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium mb-1">Why do you like this character?</label>
+            <textarea name="reason" rows="4" class="w-full border border-gray-300 rounded-md p-2"></textarea>
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium mb-1">Your Name:</label>
+            <input type="text" name="name" class = "w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium mb-1">Your Gender:</label>
+            <input type="radio" name="gender" value="male" class="mr-1"> Male
+            <input type="radio" name="gender" value="female" class="mr-1 ml-4"> Female
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium mb-1">Your Date of Birth:</label>
+            <input type="date" name="dob" class="w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium mb-1">Your Email:</label>
+            <input type="email" name="email" class="w-full border border-gray-300 rounded-md p-2">
+        </div>
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">Submit</button>
+    </form>
+</section>
+
+
+<footer class="text-white p-8 text-center">
+    <p class="text-gray-700">© 2025 Programming4</p>
+    <p class="text-gray-700">Get in touch with us: <a href="mailto:shinchan-lovers@justlearninghtml.com" class="underline text-gray-700">shinchan-lovers@justlearninghtml.com</a></p>
+</footer>
+</body>
+
+</html>
